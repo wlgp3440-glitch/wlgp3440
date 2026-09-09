@@ -9,7 +9,8 @@ from flask import Flask, render_template_string, request, jsonify
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
-from openai import OpenAI
+import openai
+openai.api_key = "user_key_here"
 import re
 import json
 from urllib.parse import urlparse
